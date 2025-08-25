@@ -1,0 +1,41 @@
+
+# CRUD Comparativa - Instrucciones
+
+## Backend (Node + Express)
+1. Abrir terminal en `backend-api`
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+3. Iniciar servidor:
+   ```bash
+   npm run dev
+   ```
+4. API corre en: http://localhost:3001/tasks
+
+## Frontend (React + Tailwind)
+1. Abrir terminal en `frontend-react`
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
+3. Instalar TailwindCSS:
+   ```bash
+   npm install -D tailwindcss postcss autoprefixer
+   npx tailwindcss init -p
+   ```
+4. Configurar `tailwind.config.js` con:
+   ```js
+   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+   ```
+5. En `src/index.css` agregar:
+   ```css
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+   ```
+6. Iniciar frontend:
+   ```bash
+   npm start
+   ```
+7. App corre en: http://localhost:3002
